@@ -8,7 +8,7 @@ jobs:
   build:
       runs-on: ububtu-latest
       steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
   
       - name: Setup Testcontainers Cloud Client
         uses: atomicjar/testcontainers-cloud-setup-action@v1
