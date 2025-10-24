@@ -274,7 +274,7 @@ jobs:
 
     - name: update 
       if: ${{ matrix.BUILD_TYPE == 'Release' }}
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: rabbitreim_android_${{matrix.ANDROID_ABI}}_${{env.RabbitIm_VERSION}}
         path: |
