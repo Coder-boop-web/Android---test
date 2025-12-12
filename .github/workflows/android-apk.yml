@@ -44,21 +44,21 @@ jobs:
         run: yes | sdkmanager --licenses || true
 
       - name: Upload build outputs (APKs)
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: APKs
           path: 'build-apk/'
 
       - name: Upload JVM local results (XML)
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: local-test-results
           path: 'build-xml/'
 
       - name: Upload lint reports (HTML)
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: lint-reports
           path: 'build-html/'
@@ -94,7 +94,7 @@ jobs:
 
       - name: Upload test reports
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: test-reports-${{ matrix.api-level }}
           path: 'build-reports/'
