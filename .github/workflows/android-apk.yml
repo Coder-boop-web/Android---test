@@ -38,7 +38,7 @@ jobs:
           gradle-home-cache-cleanup: true
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Accept licenses
         run: yes | sdkmanager --licenses || true
@@ -87,7 +87,7 @@ jobs:
           gradle-home-cache-cleanup: true
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Accept licenses
         run: yes | sdkmanager --licenses || true
